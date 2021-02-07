@@ -1,5 +1,8 @@
-# compiled output
+# Compiled output
 /dist
+src/*/dist
+
+# Modules
 /node_modules
 src/*/node_modules
 
@@ -38,9 +41,9 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# dependencies
+# Dependencies
 /.pnp
 .pnp.js
 
-# production
+# Production
 /build

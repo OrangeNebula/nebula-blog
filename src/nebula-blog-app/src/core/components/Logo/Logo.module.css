@@ -1,0 +1,63 @@
+.Logo {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: PlanetRotation 60s infinite linear;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow: 0 0 60px -20px rgba(36, 36, 36, 0.72), -14px -15px 40px -10px rgba(0, 0, 0, 0.23);
+}
+
+.Background {
+    width:150px;
+    height:150px;
+    position:absolute;
+    border-radius:50%;
+    animation: BackgroundRotation 120s infinite linear;
+    opacity: 0.8;
+    box-shadow:inset -10px -10px 40px #bfbfbf, inset 10px 10px 30px -10px rgba(114, 114, 114, 0.6);
+}
+
+.Clouds {
+    width:150px;
+    height:150px;
+    position:absolute;
+    border-radius:50%;
+    animation: BackgroundRotation 120s infinite linear;
+    opacity: 0.4;
+}
+
+@keyframes PlanetRotation {
+    0%{
+        transform:rotateZ(0);
+    }
+    100%{
+        transform:rotateZ(-360deg);
+    }
+}
+
+@keyframes BackgroundRotation {
+    0%{
+        background-position-x:0;
+    }
+    50%{
+        background-position-x:-600px;
+    }
+    100%{
+        background-position-x:0px;
+    }
+}
+
+.Tail {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    transform: rotateZ(70deg) rotateY(70deg) translateZ(-35px) translateY(-7px);
+    border: 10px solid #505050;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
