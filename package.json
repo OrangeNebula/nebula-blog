@@ -8,6 +8,8 @@
     "src/*"
   ],
   "scripts": {
-    "start:app": "lerna run start --scope nebula-blog-app"
+    "start:app": "lerna run start --scope nebula-blog-app",
+    "start:api": "lerna run start --stream --scope nebula-blog-api",
+    "test:api": "lerna run test --stream --scope nebula-blog-api"
   }
 }
